@@ -1,0 +1,14 @@
+name: ialc
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v2
+
+      - name: welcome
+        run: echo "welcome to IALC"
